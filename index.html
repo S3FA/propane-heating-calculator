@@ -5,9 +5,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="all.css" media="all" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="all.js"></script>
 </head>
 <body>
-<h1>Propane Heating Calculator</h1>
+  <h1>Propane Heating Calculator</h1>
+
+  <input type="number" name="use-rate" />
+  <select name="units">
+    <option>lb/h</option>
+    <option>btu/h</option>
+    <option>kg/h</option>
+  </select>
+
+  <ul id="output">
+    <li>
+      <span class="number"></span>
+      <span class="unit"></span>
+    </li>
+    <li>
+      <span class="number"></span>
+      <span class="unit"></span>
+    </li>
+    <li>
+      <span class="number"></span>
+      <span class="unit"></span>
+    </li>
+  </ul>
 </body>
 </html>
